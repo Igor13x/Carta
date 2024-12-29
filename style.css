@@ -114,7 +114,7 @@ body {
   height: auto;
 }
 
-@media (max-width: 675px) {
+@media (max-width: 480px) {
 
   body {
     width: 160%; /* Expande a largura da página para permitir o arrasto */
