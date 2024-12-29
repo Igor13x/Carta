@@ -33,7 +33,7 @@ body {
   box-shadow: inset 5px 0px 15px 0px rgba(0, 0, 0, 0.1),
     3px 0px 3px -2px rgba(0, 0, 0, 0.3);
   background-color: #fffffa;
-      transform: scale(1.05);
+  transform: scale(1.05);
   left: 12px;
 }
 
@@ -83,6 +83,11 @@ body {
   background-color: #fff;
 }
 
+/* Corrigido: mantendo a rotação do texto para não ficar ao contrário */
+.back .text-container {
+  transform: rotateY(180deg); /* Reverte a rotação do texto na parte de trás da carta */
+}
+
 .text-container {
   width: 80%;
   height: 80%;
@@ -109,6 +114,11 @@ body {
 }
 
 @media (max-width: 675px) {
+
+  body {
+    width: 160%; /* Expande a largura da página para permitir o arrasto */
+    overflow-x: scroll; /* Ativa a rolagem horizontal */
+  }
   .envelope {
       width: 300px;
       position: relative;
