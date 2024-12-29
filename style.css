@@ -44,7 +44,7 @@ body {
   margin: -10px 0px 0px -10px;
   margin: auto;
   border: 1px solid #e0e0db;
-  backface-visibility: hidden;
+  backface-visibility: hidden; /* Impede que o verso da carta apareça durante a rotação */
   background-color: #e8e6e3;
   background-size: contain;
   transform-style: preserve-3d;
@@ -53,6 +53,7 @@ body {
   transition: all 1s ease-in-out;
   filter: saturate(1.125) brightness(1.0125);
 }
+
 
 .card:hover .front {
   transform: perspective(800px) rotateY(-170deg);
