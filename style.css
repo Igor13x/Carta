@@ -137,3 +137,26 @@ body {
       font-size: 14px;
   }
 }
+@media (max-width: 640px) {
+
+  body {
+    width: 160%; /* Expande a largura da página para permitir o arrasto */
+    overflow-x: scroll; /* Ativa a rolagem horizontal */
+  }
+  .envelope {
+      width: 300px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  
+  .card {
+      height: 330px;
+      width: 230px;
+      margin-right: 18rem;
+  }
+
+  .text-container {
+      font-size: 14px;
+  }
+}
