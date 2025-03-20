@@ -8,9 +8,11 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  background-image: url(img/fundo.png);
+  background-image: url(https://assets.codepen.io/4927073/Background6.png);
+  background-image: url(https://assets.codepen.io/4927073/Group2.png),  linear-gradient(33deg, #ff0000c0, #880000c2);
   background-size: cover;
   background-position: 50% 50%;
+  height: 100vh;
 }
 
 .envelope {
